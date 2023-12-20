@@ -57,6 +57,12 @@ client.on('interactionCreate', (interaction) => {
 
         interaction.reply(`${num1}^(${pow}) = ${num1 ** pow}`);
     }
+
+    if (interaction.commandName === 'sqrt') {
+        const num = interaction.options.get('num').value;
+
+        interaction.reply(`√${num} = ${Math.sqrt(num)}`);
+    }
 });
 
 client.login(process.env.TOKEN);

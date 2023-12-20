@@ -92,6 +92,18 @@ const commands = [
             },
         ]
     },
+    {
+        name: 'sqrt',
+        description: 'Square roots a given number.',
+        options: [
+            {
+                name: 'num',
+                description: 'Value',
+                type: ApplicationCommandOptionType.Number,
+                required: true,
+            },
+        ]
+    },
 ]; 
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);

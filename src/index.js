@@ -11,7 +11,7 @@ const client = new Client({
 });
 
 client.on('ready', (c) => {
-    console.log(`${c.user.tag} is online.`);
+    console.log(`${c.user.tag} is now online.`);
 });
 
 client.on('messageCreate', (message) => {
